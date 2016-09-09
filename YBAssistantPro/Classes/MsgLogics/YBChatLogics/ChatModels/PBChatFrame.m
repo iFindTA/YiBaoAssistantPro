@@ -293,6 +293,11 @@ static const int PB_TIME_HEIGHT                     =       24;
     [self setTimeStamp:timeStamp];
     chatMsg.createTimeStamp = msg.timestamp;
     chatMsg.userData = msg.userData;
+    //content <=> body
+    NSString *content = nil;
+    //msgType <=> type
+    PBChatMsgType msgType = PBChatMsgTypeNone;
+    
     //组装body
     ECMessageBody *mBody = nil;
     NSString *text = session.text;
