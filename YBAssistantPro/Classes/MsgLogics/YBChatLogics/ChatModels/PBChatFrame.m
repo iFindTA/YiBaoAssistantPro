@@ -271,6 +271,78 @@ static const int PB_TIME_HEIGHT                     =       24;
     self.msg = msg;
 }
 
+#pragma mark --拆包ECMessage
+
+- (void)unBoxECMessage:(ECMessage *)msg {
+    if (!msg || PBIsEmpty(msg.from) || PBIsEmpty(msg.messageId)) {
+        return;
+    }
+    NSString *selfIMID = [[PBDBEngine shared] authorIMID];
+    self.isSelfSend = ([selfIMID isEqualToString:msg.from]);
+    if (self.isSelfSend) {
+        self.usrAvatar = [[PBDBEngine shared] authorAvatar];
+    } else {
+        self.usrAvatar = nil;//这里暂时置空
+    }
+    NSString *selfImvoip = [[PBDBEngine shared] authorIMID];
+    PBChatMessage *chatMsg = [[PBChatMessage alloc] init];
+    chatMsg.msgId = msg.messageId;
+    chatMsg.fromVoIp = msg.from;
+    chatMsg.toVoIp = msg.to;
+    long long timeStamp = [msg.timestamp longLongValue];
+    [self setTimeStamp:timeStamp];
+    chatMsg.createTimeStamp = msg.timestamp;
+    chatMsg.userData = msg.userData;
+    //组装body
+    ECMessageBody *mBody = nil;
+    NSString *text = session.text;
+    NSUInteger type = session.type;
+    Class aUnknowCellClass = NSClassFromString(@"PBChatUnknowCell");
+    if (type == MessageBodyType_Text) {
+        ECTextMessageBody *body = [[ECTextMessageBody alloc] initWithText:text];
+        body.serverTime = PBFormat(@"%lld",timeStamp);
+        mBody = body;
+        //组装cell class(class信息可由后台服务组装)
+        NSString *cellClassString = @"PBChatTextCell";
+        Class aClass = NSClassFromString(cellClassString);
+        self.isCellClassExist = (aClass != nil);
+        self.cellClass = (aClass == nil?aUnknowCellClass:aClass);
+        self.displayText = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];;
+        self.msgType = PBChatMsgTypeText;
+    }else if (type == MessageBodyType_Image){
+        ECImageMessageBody *body = [[ECImageMessageBody alloc] initWithFile:nil displayName:@""];
+        body.remotePath = text;
+        body.serverTime = PBFormat(@"%lld",timeStamp);
+        body.thumbnailRemotePath = text;
+        mBody = body;
+        NSString *cellClassString = @"PBChatImageCell";
+        Class aClass = NSClassFromString(cellClassString);
+        self.isCellClassExist = (aClass != nil);
+        self.cellClass = (aClass == nil?aUnknowCellClass:aClass);
+        self.displayText = [session.lastMsgUserData stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];;
+        self.msgType = PBChatMsgTypeImage;
+    }else if (type == MessageBodyType_Voice){
+        ECVoiceMessageBody * body = [[ECVoiceMessageBody alloc] initWithFile:nil displayName:@""];
+        body.remotePath = text;
+        body.serverTime = PBFormat(@"%lld",timeStamp);
+        //body.mediaDownloadStatus = [rs intForColumnIndex:12];
+        body.displayName = text;
+        body.duration = 2;
+        mBody = body;
+        self.msgType = PBChatMsgTypeAudio;
+    }else if (type == MessageBodyType_File){
+        
+    }else if (type == MessageBodyType_Video){
+        
+    }else if (type == MessageBodyType_Location){
+        
+    }else if (type == MessageBodyType_Call){
+        
+    }
+    msg.messageBody = mBody;
+    self.msg = msg;
+}
+
 #pragma mark -- Text Cell 类型相关方法
 
 - (CGSize)getContentSize {

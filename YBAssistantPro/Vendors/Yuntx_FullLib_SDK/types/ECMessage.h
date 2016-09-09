@@ -70,7 +70,6 @@
  */
 @property (nonatomic, copy) NSString *groupSenderName;
 
-
 /**
  @method
  @brief 创建消息实例

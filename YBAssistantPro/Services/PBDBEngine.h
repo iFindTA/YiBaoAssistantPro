@@ -11,6 +11,7 @@
 
 @class PBSession;
 @class ECMessage;
+@class PBChatMessage;
 @interface PBDBEngine : NSObject
 
 NS_ASSUME_NONNULL_BEGIN
@@ -152,6 +153,24 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return 结果
  */
 - (BOOL)saveLatestNewMsg:(ECMessage *)msg;
+
+/**
+ *  @brief 保存历史消息
+ *
+ *  @param msgs 历史消息组
+ *
+ *  @return 结果
+ */
+- (BOOL)saveHistoryMsgs:(nullable NSArray <PBChatMessage *> *)msgs;
+
+/**
+ *  @brief 由第三方消息转换为聊天消息
+ *
+ *  @param msg 第三方发送/接收的消息
+ *
+ *  @return 聊天消息
+ */
+- (PBChatMessage *)convert2ChatMsg:(ECMessage *)msg;
 
 /**
  *  @brief 删除一条聊天消息

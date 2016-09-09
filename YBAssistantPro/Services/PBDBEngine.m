@@ -11,6 +11,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "PBUsr.h"
 #import "PBSession.h"
+#import "PBChatFrame.h"
 #import "PBAFEngine.h"
 #import "ECMessage.h"
 #import "ECTextMessageBody.h"
@@ -751,6 +752,26 @@ static PBDBEngine *instance = nil;
         
         NSLog(@"ret:%zd---保存新消息chat数据",ret);
     }];
+    
+    return ret;
+}
+
+- (PBChatMessage *)convert2ChatMsg:(ECMessage *)msg {
+    PBChatMessage *chatMsg = nil;
+    if (PBIsEmpty(msg)) {
+        return chatMsg;
+    }
+    
+    return chatMsg;
+}
+
+- (BOOL)saveHistoryMsgs:(nullable NSArray <PBChatMessage *> *)msgs {
+    __block BOOL ret = false;
+    if (PBIsEmpty(msgs)) {
+        return ret;
+    }
+    
+    
     
     return ret;
 }
