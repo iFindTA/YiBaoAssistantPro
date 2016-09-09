@@ -1,0 +1,30 @@
+//
+//  YBPrefix.pch
+//  YBAssistantPro
+//
+//  Created by hu jiaju on 16/8/18.
+//  Copyright © 2016年 Nanhu. All rights reserved.
+//
+
+#ifndef YBPrefix_pch
+#define YBPrefix_pch
+
+#import "PBKits.h"
+#import "PBMediator.h"
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DeBugLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define NSLog(...) NSLog(__VA_ARGS__);
+#else
+#define DLog(...)
+#define DeBugLog(...)
+#define NSLog(...)
+#endif
+
+#endif /* YBPrefix_pch */
