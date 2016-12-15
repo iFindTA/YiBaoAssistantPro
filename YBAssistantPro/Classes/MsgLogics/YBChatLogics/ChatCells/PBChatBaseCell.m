@@ -20,6 +20,7 @@
  */
 @property (nonatomic, strong) UILabel *timeLab;
 //数据源
+
 @property (nonatomic, strong, readwrite) PBChatFrame *dataSource;
 //头像
 @property (nonatomic, strong, readwrite) UIButton *avatarBtn;
@@ -31,6 +32,7 @@
 @implementation PBChatBaseCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self initSetup];
 }
 

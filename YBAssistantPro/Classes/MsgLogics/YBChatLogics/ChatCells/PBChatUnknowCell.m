@@ -17,6 +17,7 @@
 @implementation PBChatUnknowCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self __initSetup];
 }
 

@@ -35,7 +35,7 @@
             startingLineNumber = "354"
             endingLineNumber = "354"
             landmarkName = "-refreshSessions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -51,7 +51,7 @@
             startingLineNumber = "378"
             endingLineNumber = "378"
             landmarkName = "-refreshAllSourceQueue"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -99,7 +99,7 @@
             startingLineNumber = "243"
             endingLineNumber = "243"
             landmarkName = "-saveNewestSessions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -115,7 +115,7 @@
             startingLineNumber = "306"
             endingLineNumber = "306"
             landmarkName = "-newIMMsgDidReceived:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -131,7 +131,7 @@
             startingLineNumber = "322"
             endingLineNumber = "322"
             landmarkName = "-newIMMsgDidReceived:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -254,7 +254,7 @@
             startingLineNumber = "147"
             endingLineNumber = "147"
             landmarkName = "-nativeCallWithURL:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,7 +270,7 @@
             startingLineNumber = "779"
             endingLineNumber = "779"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -286,7 +286,7 @@
             startingLineNumber = "274"
             endingLineNumber = "274"
             landmarkName = "-newIMMsgDidReceived:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -302,7 +302,7 @@
             startingLineNumber = "356"
             endingLineNumber = "356"
             landmarkName = "-imEngineDidReceivedMsg:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -318,7 +318,7 @@
             startingLineNumber = "775"
             endingLineNumber = "775"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -334,7 +334,7 @@
             startingLineNumber = "297"
             endingLineNumber = "297"
             landmarkName = "-newIMMsgDidReceived:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -350,7 +350,7 @@
             startingLineNumber = "287"
             endingLineNumber = "287"
             landmarkName = "-newIMMsgDidReceived:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -366,7 +366,7 @@
             startingLineNumber = "281"
             endingLineNumber = "281"
             landmarkName = "-newIMMsgDidReceived:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -382,7 +382,7 @@
             startingLineNumber = "322"
             endingLineNumber = "322"
             landmarkName = "-init"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -398,7 +398,7 @@
             startingLineNumber = "210"
             endingLineNumber = "210"
             landmarkName = "-timeFired"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -414,7 +414,7 @@
             startingLineNumber = "55"
             endingLineNumber = "55"
             landmarkName = "-overlay"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -430,7 +430,7 @@
             startingLineNumber = "74"
             endingLineNumber = "74"
             landmarkName = "+show"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -462,7 +462,7 @@
             startingLineNumber = "592"
             endingLineNumber = "592"
             landmarkName = "-session2Dictinary:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -542,7 +542,7 @@
             startingLineNumber = "160"
             endingLineNumber = "160"
             landmarkName = "-popUpLayer"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -558,7 +558,7 @@
             startingLineNumber = "94"
             endingLineNumber = "94"
             landmarkName = "-viewWillAppear:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -606,7 +606,7 @@
             startingLineNumber = "680"
             endingLineNumber = "680"
             landmarkName = "-growingTextView:shouldChangeTextInRange:replacementText:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -622,7 +622,7 @@
             startingLineNumber = "770"
             endingLineNumber = "770"
             landmarkName = "-enableEmojiInputAction:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -638,7 +638,7 @@
             startingLineNumber = "75"
             endingLineNumber = "75"
             landmarkName = "-layoutSubviews"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -654,7 +654,7 @@
             startingLineNumber = "89"
             endingLineNumber = "89"
             landmarkName = "-layoutSubviews"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -702,7 +702,7 @@
             startingLineNumber = "134"
             endingLineNumber = "134"
             landmarkName = "-initWithSession:withPreStamp:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -718,13 +718,13 @@
             startingLineNumber = "184"
             endingLineNumber = "184"
             landmarkName = "-updateCellContent4Frame:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YBAssistantPro/Classes/MsgLogics/YBChatLogics/ChatCells/PBChatBaseCell.m"
@@ -734,7 +734,7 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "-awakeFromNib"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -766,7 +766,7 @@
             startingLineNumber = "242"
             endingLineNumber = "242"
             landmarkName = "-viewWillAppear:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -782,7 +782,7 @@
             startingLineNumber = "189"
             endingLineNumber = "189"
             landmarkName = "-getCellHeight"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -798,7 +798,7 @@
             startingLineNumber = "193"
             endingLineNumber = "193"
             landmarkName = "-getCellClass"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1006,7 +1006,7 @@
             startingLineNumber = "366"
             endingLineNumber = "366"
             landmarkName = "-refreshSessions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1022,7 +1022,7 @@
             startingLineNumber = "407"
             endingLineNumber = "407"
             landmarkName = "-loadMoreHistoryChatMsgs"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1038,7 +1038,7 @@
             startingLineNumber = "432"
             endingLineNumber = "432"
             landmarkName = "-dealWithLoadedHistoryMsgs:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1054,7 +1054,19 @@
             startingLineNumber = "423"
             endingLineNumber = "423"
             landmarkName = "-dealWithLoadedHistoryMsgs:"
-            landmarkType = "5">
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

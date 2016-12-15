@@ -11,6 +11,7 @@
 @implementation PBChatImageCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self initSetupSubClass];
 }
 
